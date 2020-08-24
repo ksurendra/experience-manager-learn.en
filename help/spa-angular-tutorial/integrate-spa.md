@@ -99,8 +99,8 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
 
     ```json
     "@adobe/cq-angular-editable-components": "^2.0.2",
-    "@adobe/cq-spa-component-mapping": "^1.0.3",
-    "@adobe/cq-spa-page-model-manager": "^1.1.3",
+    "@adobe/aem-spa-component-mapping": "^1.0.0",
+    "@adobe/aem-spa-page-model-manager": "^1.0.0",
     ```
 
     The above modules make up the [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) and provide the functionality to make it possible to map SPA Components to AEM Components.
@@ -133,7 +133,7 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
 
     ```js
     import { Constants } from '@adobe/cq-angular-editable-components';
-    import { ModelManager } from '@adobe/cq-spa-page-model-manager';
+    import { ModelManager } from '@adobe/aem-spa-page-model-manager';
     import { Component } from '@angular/core';
 
     @Component({

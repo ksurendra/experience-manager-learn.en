@@ -94,9 +94,9 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
 4. There are also three dependencies prefixed with `@adobe`:
 
     ```json
-    "@adobe/cq-react-editable-components": "^1.2.0",
-    "@adobe/cq-spa-component-mapping": "^1.0.3",
-    "@adobe/cq-spa-page-model-manager": "^1.1.0",
+    "@adobe/aem-react-editable-components": "^1.0.0",
+    "@adobe/aem-spa-component-mapping": "^1.0.0",
+    "@adobe/aem-spa-page-model-manager": "^1.0.0",
     ```
 
     The above modules make up the [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) and provide the functionality to make it possible to map SPA Components to AEM Components.
@@ -184,7 +184,7 @@ Next, add a new component to the SPA and deploy the changes to a local AEM insta
 5. Make the following updates to `App.js` to include the static `Header`:
 
     ```diff
-      import { Page, withModel } from '@adobe/cq-react-editable-components';
+      import { Page, withModel } from '@adobe/aem-react-editable-components';
       import React from 'react';
     + import Header from './components/Header/Header';
 
